@@ -1,10 +1,11 @@
 numbers =[1,4,9]
 
-def square_array(array)
+def return_string_arra(array)
   count = 0
-  while numbers[count] < numbers.length do
-   new_numbers =[]
-   puts numbers.length
-   count += 1
+  new_array = []
+  while count < array.length do
+    new_array.push(array[count].to_s) # OR new_array << array[count].to_s
+    count += 1
   end
+  new_array
 end
